@@ -12,10 +12,9 @@ const Footer = () => {
       </div>
       <div>
         <ul className='flex gap-5 mb-7'>
-            <li>Company</li>
-            <li>Products</li>
-            <li>Offices</li>
             <li>About</li>
+            <li>Products</li>
+            <li>Privacy</li>
             <li>Contact</li>
         </ul>
       </div>

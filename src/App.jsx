@@ -7,9 +7,8 @@ import ShopCategory from "./Pages/ShopCategory"
 import Product from "./Pages/Product"
 import NotFound from "./Pages/NotFound"
 import Footer from "./Components/Footer/Footer"
-import men_banner from "./Components/Assets/banner_mens.png"
-import women_banner from "./Components/Assets/banner_women.png"
-import perfume_banner from "./Components/Assets/banner_perfume.png"
+import Women from "./Pages/Women";
+import Perfume from "./Pages/Perfume";
 import AOS from "aos"
 import "aos/dist/aos.css"
 
@@ -29,9 +28,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Shop />}></Route>
         <Route path="/cart" element={<Cart />}></Route>
-        <Route path="/men" element={<ShopCategory banner={men_banner}  category={"men"} />}></Route>
-        <Route path="/women" element={<ShopCategory banner={women_banner} category={"women"} />}></Route>
-        <Route path="/perfume" element={<ShopCategory banner={perfume_banner} category={"perfume"} />}></Route>
+        <Route path="/men" element={<ShopCategory  />}></Route>
+        <Route path="/women" element={<Women  />}></Route>
+        <Route path="/perfume" element={<Perfume  />}></Route>
         <Route path="/product/:productId" element={<Product />}></Route>
         <Route path="*" element={<NotFound/>}></Route>
       </Routes>
