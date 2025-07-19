@@ -11,6 +11,7 @@ import Women from "./Pages/Women";
 import Perfume from "./Pages/Perfume";
 import AOS from "aos"
 import "aos/dist/aos.css"
+import About from "./Pages/About";
 
 const App = () => {
   useEffect(() => {
@@ -32,6 +33,7 @@ const App = () => {
         <Route path="/women" element={<Women  />}></Route>
         <Route path="/perfume" element={<Perfume  />}></Route>
         <Route path="/product/:productId" element={<Product />}></Route>
+        <Route path="/about" element={<About />}></Route>
         <Route path="*" element={<NotFound/>}></Route>
       </Routes>
       <Footer />

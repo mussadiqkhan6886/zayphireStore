@@ -12,7 +12,7 @@ const NavBar = () => {
 
     useEffect(() => {
         const currentPath = location.pathname.split("/")[1]
-        if(currentPath == "men" || currentPath == "women" || currentPath == "perfume"  || currentPath == "cart"){
+        if(currentPath == "men" || currentPath == "women" || currentPath == "perfume"  || currentPath == "cart" || currentPath == "about"){
             setCatogery(currentPath)
         }else{
             setCatogery("shop")
@@ -20,17 +20,17 @@ const NavBar = () => {
     }, [location.pathname])
   return (
     <>
-    <header className='flex shadow justify-between px-10 py-2 items-center'>
+    <header className='flex shadow justify-between px-10 py-2 items-center fixed w-full z-100 bg-amber-100 opacity-80 '>
         <div className='flex items-center'>
-            <img className='w-[44px] h-[44px]' src={logo} alt="logo" />
+            <img className='w-[44px] mr-5 h-[44px]' src={logo} alt="logo" />
             <h1 className='font-bold text-2xl'>Zayphire</h1>
         </div>
         <div className='w-[40%] md:block hidden'>
-            <ul className='flex w-full justify-between text-gray-700 items-center'>
-                <li  className={catogery == "shop" ? "border-b-2 py-1 border-red-500 text-[17px]" : ""}> <Link to="/">Shop</Link> </li>
-                <li className={catogery == "men" ? "border-b-2 py-1 border-red-500 text-[17px]" : ""}> <Link to="/men">Men</Link> </li>
-                <li className={catogery == "women" ? "border-b-2 py-1 border-red-500 text-[17px]" : ""}> <Link to="/women">Women</Link></li>
-                <li className={catogery == "perfume" ? "border-b-2 py-1 border-red-500 text-[17px]" : ""}> <Link to='perfume'>Perfume</Link></li>
+            <ul className='flex w-full justify-between text-gray-900 items-center'>
+                <li  className={catogery == "shop" ? "border-b-2 py-1 border-amber-600 text-[17px] font-semibold" : ""}> <Link to="/">Shop</Link> </li>
+                <li className={catogery == "men" ? "border-b-2 py-1 border-amber-600 text-[17px] font-semibold" : ""}> <Link to="/men">Men</Link> </li>
+                <li className={catogery == "women" ? "border-b-2 py-1 border-amber-600 text-[17px] font-semibold" : ""}> <Link to="/women">Women</Link></li>
+                <li className={catogery == "perfume" ? "border-b-2 py-1 border-amber-600 text-[17px] font-semibold" : ""}> <Link to='perfume'>Perfume</Link></li>
             </ul>
         </div>
         <div className='flex relative gap-6'>

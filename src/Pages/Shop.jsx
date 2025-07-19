@@ -6,7 +6,7 @@ import NewLetter from '../Components/newLetter/NewLetter'
 
 const Shop = () => {
   return (
-    <main>
+    <main >
       <Hero />
       <Popular />
 

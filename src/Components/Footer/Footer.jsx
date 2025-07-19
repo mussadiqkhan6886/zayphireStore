@@ -2,17 +2,18 @@ import React from 'react'
 import logo from "../Assets/logo.JPG"
 import instagram from "../Assets/instagram_icon.png"
 import whatsapp from "../Assets/whatsapp_icon.png"
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <footer className='bg-purple-100 flex flex-col justify-center items-center p-7'>
+    <footer className='bg-black text-amber-300 flex flex-col justify-center items-center p-7'>
       <div className='flex gap-3 items-center mb-4'>
         <img className='w-[65px]' src={logo} alt="logo" />
         <h4 className='font-semibold text-2xl'>Zayphire</h4>
       </div>
       <div>
         <ul className='flex gap-5 mb-7'>
-            <li>About</li>
+            <li><Link to={"/about"}>About</Link></li>
             <li>Products</li>
             <li>Privacy</li>
             <li>Contact</li>
@@ -20,10 +21,10 @@ const Footer = () => {
       </div>
       <div className='flex gap-5 mb-7'>
         <div className='shadow p-2'>
-            <img src={instagram} alt="insta" />
+            <img className='bg-amber-200 rounded p-[3px]' src={instagram} alt="insta" />
         </div>
         <div className='shadow p-2'>
-            <img src={whatsapp} alt="whatsapp" />
+            <img className='bg-amber-200 rounded p-[3px]' src={whatsapp} alt="whatsapp" />
         </div>
       </div>
       <div>
