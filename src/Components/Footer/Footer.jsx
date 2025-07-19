@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../Assets/logo_big.png"
+import logo from "../Assets/logo.JPG"
 import instagram from "../Assets/instagram_icon.png"
 import whatsapp from "../Assets/whatsapp_icon.png"
 

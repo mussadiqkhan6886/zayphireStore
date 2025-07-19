@@ -1,7 +1,7 @@
 import { createContext, useState } from "react"
 import all_products from "../Components/Assets/all_product"
 
-export const ShopContext = createContext(null)
+export const ShopContext = createContext()
 
 const setCartDefault = () => {
         let cart = {}

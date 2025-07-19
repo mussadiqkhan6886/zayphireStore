@@ -1,25 +1,25 @@
 import p1_img from "./Boski 8 Pound - Off White Men Pic.jpeg";
 import p2_img from "./Boski 8 Pound - Off White main.jpeg";
-import p3_img from "./product_3.jpeg";
-import p4_img from "./product_4.jpeg";
-import p5_img from "./product_5.jpeg";
-import p6_img from "./product_6.jpeg";
-import p7_img from "./product_7.jpeg";
-import p8_img from "./product_8.jpeg";
-import p9_img from "./product_9.jpeg";
-import p10_img from "./product_10.jpeg";
-import p11_img from "./product_11.jpeg";
-import p12_img from "./product_12.jpeg";
-import p13_img from "./product_13.jpeg";
-import p14_img from "./product_14.jpeg";
-import p15_img from "./product_15.jpeg";
-import p16_img from "./product_16.jpeg";
-import p17_img from "./product_17.jpeg";
-import p18_img from "./product_18.jpeg";
-import p19_img from "./product_19.jpeg";
-import p20_img from "./product_20.jpeg";
-import p21_img from "./product_21.jpeg";
-import p22_img from "./product_22.jpeg";
+import p3_img from "./Dark Blue Cotton Boora Cotton Unstitched main.jpeg";
+import p4_img from "./Dark Brown Maroon Unstitched main.jpeg";
+import p5_img from "./Grey Cotton Gul Ahmed  Unstitched main.jpeg";
+import p6_img from "./Lemon Colour  Gul Ahmed unstitched.jpeg";
+import p7_img from "./Lemon Colour Gul Ahmed  unstitched main.jpeg";
+import p8_img from "./Men Black Unstitched main.jpeg";
+import p9_img from "./Men Black Unstitched.jpeg";
+import p10_img from "./Men Boora Cotton Onion Brown Unstitched.jpeg";
+import p11_img from "./Men Dynasty Grey Unstitched main.jpeg";
+import p12_img from "./Men Olive Green Unstitched Alkaram main.jpeg";
+import p13_img from "./Navy Blue Cotton Unstitched main.jpeg";
+import p14_img from "./Navy Blue Cotton Unstitched.jpeg";
+import p15_img from "./Navy Blue Plain Wash And Wear Main.jpeg";
+import p16_img from "./Navy Blue Plain Wash And Wear Men Pic.jpeg";
+import p17_img from "./Navy Blue Plain Wash And Wear.jpeg";
+import p18_img from "./Sky Blue Unstitched Cotton Fabric Gul Ahmed  For Men Main.jpeg";
+import p19_img from "./Sky Blue Unstitched Cotton Fabric Gul Ahmed For Men Pic.jpeg";
+import p20_img from "./Soft Cotton Full White Unstitched main.jpeg";
+import p21_img from "./Soft Cotton Full White Unstitched men pic.jpeg";
+import p22_img from "./WhatsApp Image 2025-07-19 at 6.42.40 PM (1).jpeg";
 
 let all_product = [
   {

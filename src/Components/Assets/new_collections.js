@@ -1,3 +1,9 @@
+import p3_img from "./Dark Blue Cotton Boora Cotton Unstitched main.jpeg";
+import p7_img from "./Lemon Colour Gul Ahmed  unstitched main.jpeg";
+import p8_img from "./Men Black Unstitched main.jpeg";
+import p10_img from "./Men Boora Cotton Onion Brown Unstitched.jpeg";
+
+
 let new_collection = [
   {
     id: 3,

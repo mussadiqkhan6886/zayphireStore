@@ -9,6 +9,7 @@ import NotFound from "./Pages/NotFound"
 import Footer from "./Components/Footer/Footer"
 import men_banner from "./Components/Assets/banner_mens.png"
 import women_banner from "./Components/Assets/banner_women.png"
+import perfume_banner from "./Components/Assets/banner_perfume.png"
 import AOS from "aos"
 import "aos/dist/aos.css"
 
