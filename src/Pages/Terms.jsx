@@ -2,9 +2,9 @@ import React from 'react'
 
 const Terms = () => {
   return (
-    <div>
-      
-    </div>
+    <main className='pt-15'>
+      <h1>Terms</h1>
+    </main>
   )
 }
 

@@ -11,11 +11,11 @@ const Products = () => {
   const itemFound = all_products.find((e) => e.id === Number(productId));
 
   return (
-    <div className='lg:px-30 px-3  py-4'>
+    <main className='lg:px-30 px-3 pt-20  py-4'>
       <Breadcrum itemFound={itemFound} />
       <DisplayProduct itemFound={itemFound} />
       <RelatedProducts />
-    </div>
+    </main>
   )
 }
 

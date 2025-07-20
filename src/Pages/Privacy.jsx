@@ -2,9 +2,9 @@ import React from 'react'
 
 const Privacy = () => {
   return (
-    <div>
-      
-    </div>
+    <main className='pt-15'>
+      <h1>Privacy</h1>
+    </main>
   )
 }
 

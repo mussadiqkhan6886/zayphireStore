@@ -7,9 +7,9 @@ const ShopCategory = () => {
   const {all_products} = useContext(ShopContext)
 
   return (
-    <div className='lg:px-20 md:py-9 text-center'> 
-      <div>
-        <h1>Men Section</h1>
+    <main className='lg:px-20 md:py-9 text-center '> 
+      <div className='pt-10'>
+        <h1 className='text-4xl'>Men Section</h1>
       </div>
       <div className='flex justify-between my-5 px-4'>
         <p>
@@ -21,7 +21,7 @@ const ShopCategory = () => {
             return <Items key={i} id={item.id} name={item.name} img={item.image}  price={item.price}  />
         })}
       </div>
-    </div>
+    </main>
   )
 }
 
