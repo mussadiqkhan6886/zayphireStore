@@ -28,7 +28,6 @@ const DisplayProduct = ({itemFound}) => {
         <div>
           <button onClick={() => addToCart(itemFound.id)} className='cursor-pointer bg-red-600 text-white px-7 py-3 text-[14px]'>ADD TO CART</button>
         </div>
-
       </div>
     </section>
   )

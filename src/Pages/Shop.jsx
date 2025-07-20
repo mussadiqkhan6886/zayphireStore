@@ -7,7 +7,7 @@ import Offers from "../Components/Offers/Offers"
 
 const Shop = () => {
   return (
-    <main className='pt-7'>
+    <main className='pt-7 px-4'>
       <Hero />
       <Popular />
       <Offers />

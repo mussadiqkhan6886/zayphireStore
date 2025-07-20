@@ -6,25 +6,39 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <footer className='bg-black text-amber-300 flex flex-col justify-center items-center p-7'>
+    <footer className='bg-neutral-100 flex flex-col justify-center items-center p-7'>
       <div className='flex gap-3 items-center mb-4'>
         <img className='w-[65px]' src={logo} alt="logo" />
         <h4 className='font-semibold text-2xl'>Zayphire</h4>
       </div>
-      <div>
-        <ul className='flex gap-5 mb-7'>
-            <li><Link to={"/about"}>About</Link></li>
-            <li>Products</li>
-            <li>Privacy</li>
-            <li>Contact</li>
-        </ul>
-      </div>
-      <div className='flex gap-5 mb-7'>
-        <div className='shadow p-2'>
-          <img className='bg-amber-200 rounded p-[3px]' src={instagram} alt="insta" />
+      <div className='flex justify-between w-full px-20 my-4'>
+        <div>
+          <h2 className='text-2xl mb-3 font-semibold'>Need Help?</h2>
+          <p>+923265753305</p>
+          <p></p>
         </div>
-        <div className='shadow p-2'>
-            <img className='bg-amber-200 rounded p-[3px]' src={whatsapp} alt="whatsapp" />
+        <div>
+          <h2 className='text-2xl mb-3 font-semibold'>Customer Service</h2>
+          <ul className='flex flex-col gap-4'>
+            <li className='hover:underline'><Link to={"/contact"}>Contact Us</Link></li>
+            <li className='hover:underline'><Link to={"/delivery"}>Delivery & Orders</Link></li>
+            <li className='hover:underline'><Link to={"/return"}>Returns & Exchanges</Link></li>
+            <li className='hover:underline'><Link to={"/terms"}>Terms & Conditions</Link></li>
+            <li className='hover:underline'><Link to={"/privacy"}>Privacy Policy</Link></li>
+          </ul>
+        </div>
+        <div>
+          <h2 className='text-2xl mb-3 font-semibold'>Company</h2>
+          <ul>
+            <li className='hover:underline'><Link to={"/about"}>About Us</Link></li>
+          </ul>
+        </div>
+        <div>
+          <h2 className='text-2xl mb-3 font-semibold'>Follow Us</h2>
+          <div className='flex gap-3'>
+            <img src={instagram} alt="insta" />
+            <img src={whatsapp} alt="insta" />
+          </div>
         </div>
       </div>
       <div>
