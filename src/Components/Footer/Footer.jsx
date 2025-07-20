@@ -21,7 +21,7 @@ const Footer = () => {
       </div>
       <div className='flex gap-5 mb-7'>
         <div className='shadow p-2'>
-            <img className='bg-amber-200 rounded p-[3px]' src={instagram} alt="insta" />
+          <img className='bg-amber-200 rounded p-[3px]' src={instagram} alt="insta" />
         </div>
         <div className='shadow p-2'>
             <img className='bg-amber-200 rounded p-[3px]' src={whatsapp} alt="whatsapp" />

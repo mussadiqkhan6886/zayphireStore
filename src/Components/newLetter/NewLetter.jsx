@@ -1,6 +1,6 @@
 const NewLetter = () => {
   return (
-    <section className='mt-[70px] md:m-15 lg:m-30 bg-gradient-to-b from-amber-200 to-white flex flex-col items-center p-12 justify-between'>
+    <section className='mt-[70px] md:m-15 lg:m-30 bg-gradient-to-b from-amber-100 to-white flex flex-col items-center p-12 justify-between'>
       <h3 className='font-semibold text-5xl mb-5'>Get Exclusive Offers On Your Email</h3>
       <p className='text-gray-700 m-5'>Subscribe to our newletter and stay updated</p>
       <div className='flex'>

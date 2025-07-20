@@ -1,3 +1,4 @@
+import main from "../Assets/main.jpg"
 const Hero = () => {
   return (
     <section className='md:flex-row flex flex-col items-center justify-between bg-amber-50 text-amber-800 overflow-x-hidden'> 
@@ -12,9 +13,9 @@ const Hero = () => {
           <a href="#newCollection"><button className='text-white cursor-pointer' >Latest Collection </button></a>
         </div>
       </div>
-      {/* <div data-aos="fade-left"  className='w-[100%] md:w-[44%]'>
-        <img className='w-[100%] md:w-[77%]' src={hero} alt="hero Image" />
-      </div> */}
+      <div data-aos="fade-left"  className='w-[100%] md:w-[44%]'>
+        <img className='w-[100%] md:w-[77%]' src={main} alt="hero Image" />
+      </div>
     </section>
   )
 }

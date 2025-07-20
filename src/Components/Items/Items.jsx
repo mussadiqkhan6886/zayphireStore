@@ -6,7 +6,7 @@ const Items = ({id, name, img, price}) => {
       <Link to={`/product/${id}`}> <img onClick={window.scrollTo(0,0)} src={img} className='w-[250px] mb-2' alt="image item" /></Link>
       <p className='text-center px-7'>{name}</p>
       <div className='flex gap-5 mt-1'>
-         <p className='font-semibold'>${price}</p>
+         <p className='font-semibold'>{price} PKR</p>
       </div>
     </div>
   )
