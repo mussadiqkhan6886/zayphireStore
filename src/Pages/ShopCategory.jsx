@@ -1,5 +1,6 @@
 import { useContext } from 'react'
 import { ShopContext } from '../Context/ShopContext'
+import banner from "../Components/Assets/banner_men.png"
 import Items from '../Components/Items/Items'
 
 const ShopCategory = () => {
@@ -8,8 +9,8 @@ const ShopCategory = () => {
 
   return (
     <main className='lg:px-20 md:py-9 text-center '> 
-      <div className='pt-10'>
-        <h1 className='text-4xl'>Men Section</h1>
+      <div data-aos="fade-right" className='pt-10 h-[570px] flex items-center justify-center'>
+        <img src={banner} alt="banner" className='h-full w-[90%]' />
       </div>
       <div className='flex justify-between my-5 px-4'>
         <p>

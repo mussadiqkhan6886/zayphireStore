@@ -1,7 +1,7 @@
 import MySlider from "../Slider/Slider"
 const Hero = () => {
   return (
-    <section> 
+    <section className="pt-22 md:pt-0"> 
       <MySlider />
     </section>
   )

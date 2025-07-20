@@ -4,7 +4,7 @@ import Heading from '../heading/Heading'
 
 const NewCollection = () => {
   return (
-    <section id="newCollection" className='justify-center flex flex-col items-center '> 
+    <section id="newCollection" className='justify-center flex flex-col items-center pt-19'> 
       <Heading title={"New Collection"} /> 
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-20'>
         {newcollection.map((item, i) => (

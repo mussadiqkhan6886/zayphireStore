@@ -27,10 +27,10 @@ const NavBar = () => {
         </div>
         <div className='w-[40%] md:block hidden'>
             <ul className='flex w-full justify-between text-gray-900 items-center'>
-                <li  className={catogery == "shop" ? "border-b-2 py-1 border-amber-600 text-[17px] font-semibold" : ""}> <Link to="/">Shop</Link> </li>
-                <li className={catogery == "men" ? "border-b-2 py-1 border-amber-600 text-[17px] font-semibold" : ""}> <Link to="/men">Men</Link> </li>
-                <li className={catogery == "women" ? "border-b-2 py-1 border-amber-600 text-[17px] font-semibold" : ""}> <Link to="/women">Women</Link></li>
-                <li className={catogery == "perfume" ? "border-b-2 py-1 border-amber-600 text-[17px] font-semibold" : ""}> <Link to='perfume'>Perfume</Link></li>
+                <li onClick={() => window.scrollTo(0,0)}  className={catogery == "shop" ? "border-b-2 py-1 border-amber-600 text-[17px] font-semibold" : ""}> <Link to="/">Shop</Link> </li>
+                <li onClick={() => window.scrollTo(0,0)} className={catogery == "men" ? "border-b-2 py-1 border-amber-600 text-[17px] font-semibold" : ""}> <Link to="/men">Men</Link> </li>
+                <li onClick={() => window.scrollTo(0,0)} className={catogery == "women" ? "border-b-2 py-1 border-amber-600 text-[17px] font-semibold" : ""}> <Link to="/women">Women</Link></li>
+                <li onClick={() => window.scrollTo(0,0)} className={catogery == "perfume" ? "border-b-2 py-1 border-amber-600 text-[17px] font-semibold" : ""}> <Link to='perfume'>Perfume</Link></li>
             </ul>
         </div>
         <div className='flex relative gap-6'>
@@ -38,7 +38,7 @@ const NavBar = () => {
             <p className='bg-red-600 text-white absolute rounded-full w-[20px] text-[14px] text-center -right-2 -top-1'>{cartTotalCount()}</p>
         </div>
     </header>
-    <nav className='md:hidden '>
+    <nav className='md:hidden fixed w-full z-100 top-14 bg-amber-100 shadow px-10'>
         <div className='p-2 px-5'>
             <ul className='flex w-full justify-between text-gray-700 items-center '>
                 <li  className={catogery == "shop" ? "border-b-2 py-1 border-red-500 text-[17px]" : ""}> <Link to="/">Shop</Link> </li>
