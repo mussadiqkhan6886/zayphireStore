@@ -7,8 +7,15 @@ const CartItem = () => {
     
     const {totalAmount, all_products, cartValue, removeFromCart} = useContext(ShopContext)
 
-  return (
-    <section className='md:p-10 pt-15 lg:px-30'>
+    {if(totalAmount() <= 0){
+        return (
+            <section className='text-center p-5'>
+                <h1 className='text-4xl font-semibold'>No Items In Cart</h1>
+            </section>
+        )
+    }else{
+        return(
+            <section className='md:p-10 pt-15 lg:px-30'>
     <div className='flex'>
         <h2 className='w-[10%] font-semibold text-[18px] mb-3'>Products</h2>
         <h2 className='w-[30%] font-semibold text-[18px] mb-3 pl-10'>Title</h2>
@@ -58,7 +65,7 @@ const CartItem = () => {
                     <p className='font-bold text-[16px]'>PKR {totalAmount()}</p>
                 </div>
             </div>
-            <Link to={"/checkout"}><button className='bg-red-500 px-6 py-2 text-white mt-5 cursor-pointer'>PROCEED TO CHECKOUT</button></Link>
+            <Link to={"/checkout"}><button disabled={totalAmount() <= 0 ? true : false} className='bg-red-500 px-6 py-2 disabled:bg-gray-300 text-white mt-5 not-disabled:cursor-pointer'>PROCEED TO CHECKOUT</button></Link>
         </div>
         <div>
             <h5 className='text-gray-400 mb-2'>If you have a promo code, Enter it here</h5>
@@ -70,7 +77,9 @@ const CartItem = () => {
     </div>
    
     </section>
-  )
+        )
+    }}
+
 }
 
 export default CartItem
