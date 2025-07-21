@@ -10,17 +10,21 @@ const ShopCategory = () => {
   const [product, setProduct] = useState(all_products)
   const [sortOrder, setSortOrder] = useState("")
 
-  const sort = (event) => {
-    setSortOrder(event.target.value)
+  useEffect(() => {
     const sortedProduct = [...all_products]
     if(sortOrder == "hightolow"){
-      sortedProduct.sort((a,b) => a.price - b.price)
-    }else if(sortOrder == "lowtohigh"){
       sortedProduct.sort((a,b) => b.price - a.price)
+    }else if(sortOrder == "lowtohigh"){
+      sortedProduct.sort((a,b) => a.price - b.price)
     }
     setProduct(sortedProduct)
-    console.log(sortOrder)
+  }, [sortOrder, product])
+
+  const handleSort = (e) => {
+    setSortOrder(e.target.value)
   }
+   
+  
 
   return (
     <main className='lg:px-20 pt-30 md:py-18 text-center '> 
@@ -32,7 +36,7 @@ const ShopCategory = () => {
           <span className='font-semibold'>Showing all products </span>
         </p>
         <div>
-          <select value={sortOrder} onChange={sort} className='outline-none shadow px-2 py-1 cursor-pointer shadow-gray-400'>
+          <select value={sortOrder} onChange={handleSort} className='outline-none shadow px-2 py-1 cursor-pointer shadow-gray-400'>
             <option value="">Sort</option>
             <option value="hightolow">Price High to Low</option>
             <option value="lowtohigh">Price Low to High</option>
