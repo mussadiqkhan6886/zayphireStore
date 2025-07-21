@@ -7,12 +7,6 @@ const DisplayProduct = ({itemFound}) => {
 
   return (
     <section className='flex items-center md:flex-row flex-col mt-7 gap-3'>
-      <div className='w-[200px] hidden  lg:flex flex-col items-center'>
-        <img className='w-[100px] mb-2' src={itemFound.image} alt="image" />
-        <img className='w-[100px] mb-2' src={itemFound.image} alt="image" />
-        <img className='w-[100px] mb-2' src={itemFound.image} alt="image" />
-        <img className='w-[100px] mb-2' src={itemFound.image} alt="image" />
-      </div>
       <div className='md:w-[810px]'>
         <img className='w-[430px]' src={itemFound.image} alt="main image" />
       </div>
@@ -25,7 +19,7 @@ const DisplayProduct = ({itemFound}) => {
         </div>
         <p>{itemFound.description}</p>
         <div>
-          <button onClick={() => addToCart(itemFound.id)} className='cursor-pointer bg-red-600 text-white px-7 py-3 text-[14px]'>ADD TO CART</button>
+          <button onClick={() => addToCart(itemFound.id)} className='cursor-pointer bg-red-600 text-white px-7 py-3 text-[14px] hover:bg-red-700 active:bg-red-800'>ADD TO CART</button>
         </div>
       </div>
     </section>

@@ -4,6 +4,7 @@ const Cart = () => {
   return (
     <main className='pt-15'>
       <CartItem />
+    
     </main>
   )
 }

@@ -34,8 +34,10 @@ const NavBar = () => {
             </ul>
         </div>
         <div className='flex relative gap-6'>
-            <Link to={"/cart"}><img onClick={() => window.scrollTo(0,0)} className='w-[33px]' src={cart_icon} alt="cartIcon" /></Link> 
-            <p className='bg-red-600 text-white absolute rounded-full w-[20px] text-[14px] text-center -right-2 -top-1'>{cartTotalCount()}</p>
+            <Link to={"/cart"}>
+                <i  onClick={() => window.scrollTo(0,0)}  className="fa-solid fa-cart-shopping text-[26px]"></i>
+            </Link> 
+            <p className='bg-red-600 text-white absolute rounded-full w-[18px] text-[12px] text-center -right-2 -top-1'>{cartTotalCount()}</p>
         </div>
     </header>
     <nav className='md:hidden fixed w-full z-100 top-14 bg-amber-100 shadow px-10'>

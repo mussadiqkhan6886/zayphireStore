@@ -17,6 +17,7 @@ import Privacy from "./Pages/Privacy";
 import Returns from "./Pages/Returns";
 import Terms from "./Pages/Terms";
 import Checkout from "./Pages/Checkout";
+import Delivery from "./Pages/Delivery";
 
 const App = () => {
   useEffect(() => {
@@ -42,6 +43,7 @@ const App = () => {
         <Route path="/contact" element={<ContactUs />}></Route>
         <Route path="/privacy" element={<Privacy />}></Route>
         <Route path="/return" element={<Returns />}></Route>
+        <Route path="/delivery" element={<Delivery />}></Route>
         <Route path="/terms" element={<Terms />}></Route>
         <Route path="/checkout" element={<Checkout />}></Route>
         <Route path="*" element={<NotFound/>}></Route>

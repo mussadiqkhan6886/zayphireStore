@@ -32,7 +32,7 @@ const CartItem = () => {
                         <h3 className='w-[15%] pl-5'>{cartValue[item.id]}</h3>
                         <h3 className='w-[15%] pl-2'>PKR {item.price * cartValue[item.id]}</h3>
                         <div className='w-[15%]'>
-                            <img className='w-[18%] md:w-[8%] ml-3 cursor-pointer' onClick={() => removeFromCart(item.id)} src={cross} alt="remove icon" />
+                            <i onClick={() => removeFromCart(item.id)} src={cross}  className="fa-solid fa-xmark text-xl ml-3 cursor-pointer"></i>
                         </div>
                     </div>
                 )

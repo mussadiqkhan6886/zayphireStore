@@ -18,7 +18,7 @@ const ShopCategory = () => {
       sortedProduct.sort((a,b) => a.price - b.price)
     }
     setProduct(sortedProduct)
-  }, [sortOrder, product])
+  }, [sortOrder])
 
   const handleSort = (e) => {
     setSortOrder(e.target.value)
