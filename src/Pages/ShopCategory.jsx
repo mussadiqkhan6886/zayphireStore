@@ -8,9 +8,9 @@ const ShopCategory = () => {
   const {all_products} = useContext(ShopContext)
 
   return (
-    <main className='lg:px-20 md:py-9 text-center '> 
-      <div data-aos="fade-right" className='pt-10 h-[570px] flex items-center justify-center'>
-        <img src={banner} alt="banner" className='h-full w-[90%]' />
+    <main className='lg:px-20 pt-30 md:py-18 text-center '> 
+      <div data-aos="fade-right" className='h-[300px] lg:h-[500px] overflow-hidden flex items-center justify-center'>
+        <img src={banner} alt="banner" className='object-cover  w-[100%]' />
       </div>
       <div className='flex justify-between my-5 px-4'>
         <p>

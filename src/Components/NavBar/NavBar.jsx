@@ -34,17 +34,17 @@ const NavBar = () => {
             </ul>
         </div>
         <div className='flex relative gap-6'>
-            <Link to={"/cart"}><img className='w-[33px]' src={cart_icon} alt="cartIcon" /></Link> 
+            <Link to={"/cart"}><img onClick={() => window.scrollTo(0,0)} className='w-[33px]' src={cart_icon} alt="cartIcon" /></Link> 
             <p className='bg-red-600 text-white absolute rounded-full w-[20px] text-[14px] text-center -right-2 -top-1'>{cartTotalCount()}</p>
         </div>
     </header>
     <nav className='md:hidden fixed w-full z-100 top-14 bg-amber-100 shadow px-10'>
         <div className='p-2 px-5'>
             <ul className='flex w-full justify-between text-gray-700 items-center '>
-                <li  className={catogery == "shop" ? "border-b-2 py-1 border-red-500 text-[17px]" : ""}> <Link to="/">Shop</Link> </li>
-                <li className={catogery == "men" ? "border-b-2 py-1 border-red-500 text-[17px]" : ""}> <Link to="/men">Men</Link> </li>
-                <li className={catogery == "women" ? "border-b-2 py-1 border-red-500 text-[17px]" : ""}> <Link to="/women">Women</Link></li>
-                <li className={catogery == "perfume" ? "border-b-2 py-1 border-red-500 text-[17px]" : ""}> <Link to='perfume'>Perfume</Link></li>
+                <li onClick={() => window.scrollTo(0,0)}  className={catogery == "shop" ? "border-b-2 py-1 border-red-500 text-[17px]" : ""}> <Link to="/">Shop</Link> </li>
+                <li onClick={() => window.scrollTo(0,0)} className={catogery == "men" ? "border-b-2 py-1 border-red-500 text-[17px]" : ""}> <Link to="/men">Men</Link> </li>
+                <li onClick={() => window.scrollTo(0,0)} className={catogery == "women" ? "border-b-2 py-1 border-red-500 text-[17px]" : ""}> <Link to="/women">Women</Link></li>
+                <li onClick={() => window.scrollTo(0,0)} className={catogery == "perfume" ? "border-b-2 py-1 border-red-500 text-[17px]" : ""}> <Link to='perfume'>Perfume</Link></li>
             </ul>
         </div>
     </nav>

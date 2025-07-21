@@ -7,7 +7,7 @@ import p10_img from "./Men Boora Cotton Onion Brown Unstitched.jpeg";
 let new_collection = [
   {
      id: 2,
-     name: "Dark Blue Cotton Boora Cotton ",
+     name: "Dark Blue Cotton Boora",
      image: p3_img,
      price: "2399",
    },
@@ -19,13 +19,13 @@ let new_collection = [
     },
  {
      id: 6,
-     name: "Men Black ",
+     name: "Black ",
      image: p8_img,
      price: "2399",
    },
    {
       id: 7,
-      name: "Men Boora Cotton Onion Brown ",
+      name: "Boora Cotton Onion Brown ",
       image: p10_img,
       price: "2599",
     },

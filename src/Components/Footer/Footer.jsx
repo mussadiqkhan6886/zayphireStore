@@ -14,23 +14,23 @@ const Footer = () => {
       <div className='md:flex grid grid-cols-2 mb-10 justify-between gap-10 w-full px-20 my-4'>
         <div>
           <h2 className='md:text-2xl text-xl mb-3 font-semibold'>Need Help?</h2>
-          <p>+923265753305</p>
+          <p className='text-[14px] md:text-[16px]'>+923265753305</p>
           <p></p>
         </div>
         <div>
           <h2 className='md:text-2xl text-xl mb-3 font-semibold'>Customer Service</h2>
           <ul className='flex flex-col gap-4'>
-            <li className='hover:underline'><Link to={"/contact"}>Contact Us</Link></li>
-            <li className='hover:underline'><Link to={"/delivery"}>Delivery & Orders</Link></li>
-            <li className='hover:underline'><Link to={"/return"}>Returns & Exchanges</Link></li>
-            <li className='hover:underline'><Link to={"/terms"}>Terms & Conditions</Link></li>
-            <li className='hover:underline'><Link to={"/privacy"}>Privacy Policy</Link></li>
+            <li className='hover:underline text-[14px] whitespace-nowrap md:text-[16px]'><Link to={"/contact"}>Contact Us</Link></li>
+            <li className='hover:underline text-[14px] whitespace-nowrap md:text-[16px]'><Link to={"/delivery"}>Delivery & Orders</Link></li>
+            <li className='hover:underline text-[14px] whitespace-nowrap md:text-[16px]'><Link to={"/return"}>Returns & Exchanges</Link></li>
+            <li className='hover:underline text-[14px] whitespace-nowrap md:text-[16px]'><Link to={"/terms"}>Terms & Conditions</Link></li>
+            <li className='hover:underline text-[14px] whitespace-nowrap md:text-[16px]'><Link to={"/privacy"}>Privacy Policy</Link></li>
           </ul>
         </div>
         <div>
           <h2 className='md:text-2xl text-xl mb-3 font-semibold'>Company</h2>
           <ul>
-            <li className='hover:underline'><Link to={"/about"}>About Us</Link></li>
+            <li className='hover:underline text-[14px] whitespace-nowrap md:text-[16px]'><Link to={"/about"}>About Us</Link></li>
           </ul>
         </div>
         <div>

@@ -19,18 +19,18 @@ const MySlider = () => {
       >
         <SwiperSlide>
             <div className="md:flex-row flex flex-col items-center justify-between bg-amber-50 text-amber-800 overflow-x-hidden">
-            <div data-aos="fade-right" className=' md:h-dvh flex flex-col items-start justify-center m-auto md:pl-18'>
-                    <h2 className='font-bold text-xl'>NEW ARRIVALS ONLY</h2>
+            <div data-aos="fade-right" className=' h-dvh flex flex-col items-start justify-center m-auto md:pl-18'>
+                    <h2 className='font-bold text-2xl'>NEW ARRIVALS ONLY</h2>
                     <div className='flex gap-3 mt-1'>
-                    <h2 className='font-semibold md:text-6xl lg:text-7xl text-5xl'>new </h2>
+                    <h2 className='font-semibold md:text-6xl lg:text-7xl text-7xl'>New </h2>
                     
                     </div>
-                    <h2 className='font-semibold md:text-6xl lg:text-7xl text-5xl' > collections <br /> for everyone </h2>
+                    <h2 className='font-semibold md:text-6xl lg:text-7xl text-7xl' > Collections <br /> For Everyone </h2>
                     <div className='bg-amber-500 flex p-3 px-7 items-center rounded-3xl mt-5 gap-3'>
                         <a href="#newCollection"><button className='text-white cursor-pointer' >Latest Collection </button></a>
                     </div>
               </div>
-                <div data-aos="fade-left"  className='w-[50%] mt-5 md:mt-0 md:w-[44%]'>
+                <div data-aos="fade-left"  className='w-[90%] mt-5 md:mt-0 md:w-[44%]'>
                     <img className='w-[100%] md:w-[77%]' src={main} alt="hero Image" />
                 </div>
             </div>
@@ -38,8 +38,8 @@ const MySlider = () => {
 
         <SwiperSlide>
           <div className="md:flex-row flex flex-col items-center justify-between bg-amber-50 text-amber-800 overflow-x-hidden">
-            <div data-aos="fade-right" className='md:h-dvh flex flex-col items-start justify-center m-auto md:pl-18'>
-                    <h2 className='font-bold lg:text-7xl text-5xl'>Zayphire</h2>
+            <div data-aos="fade-right" className='h-dvh flex flex-col items-start justify-center m-auto md:pl-18'>
+                    <h2 className='font-bold lg:text-7xl text-7xl'>Zayphire</h2>
                     <div className='flex gap-3 mt-5'>
                     <h2 style={{fontFamily: "Great Vibes"}} className='lg:text-2xl text-xl tracking-wide'>Where Elegance Begins With Every Thread </h2>
                     
@@ -49,7 +49,7 @@ const MySlider = () => {
                         <img src={logo} alt="logo" />
                     </div>
                 </div>
-                <div data-aos="fade-left"  className='w-[50%] mt-5 md:mt-0 md:w-[44%]'>
+                <div data-aos="fade-left"  className='w-[90%] mt-5 md:mt-0 md:w-[44%]'>
                     <img className='w-[100%] md:w-[77%]' src={main2} alt="hero Image" />
                 </div>
             </div>

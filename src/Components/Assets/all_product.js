@@ -32,7 +32,7 @@ let all_product = [
   },
   {
     id: 2,
-    name: "Dark Blue Cotton Boora Cotton",
+    name: "Dark Blue Cotton Boora",
     image: p3_img,
     price: "2399",
     category: "Men",
@@ -65,7 +65,7 @@ let all_product = [
   },
   {
     id: 6,
-    name: "Men Black",
+    name: "Black",
     image: p8_img,
     side_image: p9_img,
     price: "2399",
@@ -74,7 +74,7 @@ let all_product = [
   },
   {
     id: 7,
-    name: "Men Boora Cotton Onion Brown",
+    name:  "Boora Cotton Onion Brown",
     image: p10_img,
     price: "2599",
     category: "Men",
@@ -90,7 +90,7 @@ let all_product = [
   },
   {
     id: 9,
-    name: "Men Olive Green Alkaram",
+    name: "Olive Green Alkaram",
     image: p12_img,
     price: "2399",
     category: "Men",
@@ -107,7 +107,7 @@ let all_product = [
   },
   {
     id: 11,
-    name: "Navy Blue Plain Wash And Wear",
+    name: "Navy Blue Plain",
     image: p15_img,
     side_image: p16_img,
     price: "2799",
@@ -116,7 +116,7 @@ let all_product = [
   },
   {
     id: 12,
-    name: "Sky Blue Cotton Fabric Gul Ahmed",
+    name: "Sky Blue Cotton Gul Ahmed",
     image: p18_img,
     side_image: p19_img,
     price: "2999",

@@ -12,7 +12,7 @@ let data = [
     },
     {
       id: 2,
-      name: "Dark Blue Cotton Boora Cotton ",
+      name: "Dark Blue Cotton Boora",
       image: p3_img,
       price: "2399",
     },
