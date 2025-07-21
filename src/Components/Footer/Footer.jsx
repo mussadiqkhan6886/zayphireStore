@@ -20,17 +20,17 @@ const Footer = () => {
         <div>
           <h2 className='md:text-2xl text-xl mb-3 font-semibold'>Customer Service</h2>
           <ul className='flex flex-col gap-4'>
-            <li className='hover:underline text-[14px] whitespace-nowrap md:text-[16px]'><Link to={"/contact"}>Contact Us</Link></li>
-            <li className='hover:underline text-[14px] whitespace-nowrap md:text-[16px]'><Link to={"/delivery"}>Delivery & Orders</Link></li>
-            <li className='hover:underline text-[14px] whitespace-nowrap md:text-[16px]'><Link to={"/return"}>Returns & Exchanges</Link></li>
-            <li className='hover:underline text-[14px] whitespace-nowrap md:text-[16px]'><Link to={"/terms"}>Terms & Conditions</Link></li>
-            <li className='hover:underline text-[14px] whitespace-nowrap md:text-[16px]'><Link to={"/privacy"}>Privacy Policy</Link></li>
+            <li onClick={() => window.scrollTo(0,0)} className='hover:underline text-[14px] whitespace-nowrap md:text-[16px]'><Link to={"/contact"}>Contact Us</Link></li>
+            <li onClick={() => window.scrollTo(0,0)} className='hover:underline text-[14px] whitespace-nowrap md:text-[16px]'><Link to={"/delivery"}>Delivery & Orders</Link></li>
+            <li onClick={() => window.scrollTo(0,0)} className='hover:underline text-[14px] whitespace-nowrap md:text-[16px]'><Link to={"/return"}>Returns & Exchanges</Link></li>
+            <li onClick={() => window.scrollTo(0,0)} className='hover:underline text-[14px] whitespace-nowrap md:text-[16px]'><Link to={"/terms"}>Terms & Conditions</Link></li>
+            <li onClick={() => window.scrollTo(0,0)} className='hover:underline text-[14px] whitespace-nowrap md:text-[16px]'><Link to={"/privacy"}>Privacy Policy</Link></li>
           </ul>
         </div>
         <div>
           <h2 className='md:text-2xl text-xl mb-3 font-semibold'>Company</h2>
           <ul>
-            <li className='hover:underline text-[14px] whitespace-nowrap md:text-[16px]'><Link to={"/about"}>About Us</Link></li>
+            <li onClick={() => window.scrollTo(0,0)} className='hover:underline text-[14px] whitespace-nowrap md:text-[16px]'><Link to={"/about"}>About Us</Link></li>
           </ul>
         </div>
         <div>
