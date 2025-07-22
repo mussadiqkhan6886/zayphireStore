@@ -65,7 +65,7 @@ const CartItem = () => {
                     <p className='font-bold text-[16px]'>PKR {totalAmount()}</p>
                 </div>
             </div>
-            <Link to={"/checkout"}><button disabled={totalAmount() <= 0 ? true : false} className='bg-red-500 px-6 py-2 disabled:bg-gray-300 text-white mt-5 not-disabled:cursor-pointer'>PROCEED TO CHECKOUT</button></Link>
+            <Link to={"/checkout"}><button onClick={() => window.scroll(0,0)} disabled={totalAmount() <= 0 ? true : false} className='bg-red-500 px-6 py-2 disabled:bg-gray-300 text-white mt-5 not-disabled:cursor-pointer'>PROCEED TO CHECKOUT</button></Link>
         </div>
         <div>
             <h5 className='text-gray-400 mb-2'>If you have a promo code, Enter it here</h5>

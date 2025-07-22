@@ -1,8 +1,10 @@
 import React, { useContext, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ShopContext } from "../Context/ShopContext";
+import { useNavigate } from "react-router-dom";
 
 const Checkout = () => {
+  const nav = useNavigate()
   const [formData, setFormData] = useState({
     fullName: "",
     phone: "",
@@ -50,22 +52,29 @@ const Checkout = () => {
       email: formData.email,
       address: formData.address,
       city: formData.city,
-      postalCode: formData.postalCode,
+      postalCode: formData.postalCode || "No Postal Code",
       notes: formData.notes || "No notes",
       cartItems: generateProductList(),
-      totalAmount: `${totalAmount} PKR`,
+      totalAmount: `${totalAmount()} PKR`,
     };
+
+    const serviceKey = "service_c8z7cbg"
+    const templateKey = "template_xnpp6hi"
+    const publicKey  = "PneOTVPQaXcM4CPRd"
 
     emailjs
       .send(
-        "YOUR_SERVICE_ID",       // replace with your actual service ID
-        "YOUR_TEMPLATE_ID",      // replace with your actual template ID
+        serviceKey,       // replace with your actual service ID
+        templateKey,      // replace with your actual template ID
         templateParams,
-        "YOUR_PUBLIC_KEY"        // replace with your actual public key
+        publicKey        // replace with your actual public key
       )
       .then(
         () => {
           setStatus("✅ Order placed successfully!");
+          setTimeout(() => {
+            nav('/')
+          }, (2000));
           setFormData({
             fullName: "",
             phone: "",
@@ -95,7 +104,7 @@ const Checkout = () => {
         >
           <div className="space-y-4">
             <input
-              autocomplete="off"
+              autoComplete="off"
 
               name="fullName"
               type="text"
@@ -106,7 +115,7 @@ const Checkout = () => {
               className="border-gray-400 outline-none w-full p-3 border rounded-md"
             />
             <input
-              autocomplete="off"
+              autoComplete="off"
 
               name="phone"
               type="tel"
@@ -117,7 +126,7 @@ const Checkout = () => {
               className="border-gray-400 outline-none w-full p-3 border rounded-md"
             />
             <input
-              autocomplete="off"
+              autoComplete="off"
 
               name="email"
               type="email"
@@ -128,7 +137,7 @@ const Checkout = () => {
               className="border-gray-400 outline-none w-full p-3 border rounded-md"
             />
             <input
-              autocomplete="off"
+              autoComplete="off"
 
               name="city"
               type="text"

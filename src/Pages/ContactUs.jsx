@@ -1,22 +1,28 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 const ContactUs = () => {
 
    const form = useRef();
 
+  const serviceKey = "service_c8z7cbg"
+  const templateKey = "template_37yxp52"
+  const publicKey  = "PneOTVPQaXcM4CPRd"
+
+  const [status, setStatus] = useState("")
+
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setStatus("Sending")
     emailjs
-      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-        publicKey: 'YOUR_PUBLIC_KEY',
-      })
+      .sendForm(serviceKey, templateKey, form.current, publicKey)
       .then(
         () => {
+          setStatus("Message sent")
           console.log('SUCCESS!');
         },
         (error) => {
+          setStatus("Message Failed")
           console.log('FAILED...', error.text);
         },
       );
@@ -33,7 +39,7 @@ const ContactUs = () => {
     <div>
       <label className="block text-gray-700 font-medium mb-1">Name</label>
       <input
-        autocomplete="off"
+        autoComplete="off"
         type="text"
         name="user_name"
         className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -44,7 +50,7 @@ const ContactUs = () => {
     <div>
       <label className="block text-gray-700 font-medium mb-1">Email</label>
       <input
-        autocomplete="off"
+        autoComplete="off"
         type="email"
         name="user_email"
         className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -63,11 +69,12 @@ const ContactUs = () => {
     </div>
 
     <input
-      autocomplete="off"
+      autoComplete="off"
       type="submit"
       value="Send"
       className="w-full bg-amber-600 text-white cursor-pointer font-semibold py-2 rounded-md hover:bg-amber-700 transition"
     />
+    {status}
   </form>
 </main>
   )
