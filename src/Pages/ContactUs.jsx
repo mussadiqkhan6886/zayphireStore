@@ -22,7 +22,7 @@ const ContactUs = () => {
       );
   };
   return (
-   <main className="pt-20 px-4 mb-5 max-w-xl mx-auto">
+   <main className="pt-30 lg:pt-20 px-4 mb-5 max-w-xl mx-auto">
   <h1 className="text-3xl font-bold text-center mb-8">Contact Us</h1>
 
   <form

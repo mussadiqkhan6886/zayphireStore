@@ -11,7 +11,7 @@ const Footer = () => {
         <img className='w-[65px]' src={logo} alt="logo" />
         <h4 className='font-semibold text-2xl'>Zayphire</h4>
       </div>
-      <div className='md:flex grid grid-cols-2 mb-10 justify-between gap-10 w-full px-20 my-4'>
+      <div className='lg:flex md:grid-cols-3 grid grid-cols-2 mb-10 justify-between gap-10 w-full px-17 my-4'>
         <div>
           <h2 className='md:text-2xl text-xl mb-3 font-semibold'>Need Help?</h2>
           <p className='text-[14px] md:text-[16px] mb-3'><i className="fa-solid fa-phone mr-2"></i>+923265753305</p>

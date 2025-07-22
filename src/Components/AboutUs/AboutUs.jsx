@@ -1,9 +1,8 @@
 import aboutimg from "../Assets/aboutus.jpeg"
 const AboutUs = () => {
   return (
-    <div className="flex">
-        <p className="w-[50%]">
-            About Zayphire
+    <div className="flex flex-col md:flex-row justify-center items-center p-5 gap-7">
+        <p className="md:w-[50%]">
             Zayphire is more than just a fabric store — it's a celebration of timeless elegance, refined craftsmanship, and modern Pakistani fashion. Born with a passion for unstitched fabrics and style that speaks, Zayphire is your new go-to destination for luxurious textures, statement-worthy colors, and premium-quality materials.
 
             At Zayphire, we believe that fabric is the first step in a story — your story. Whether you're dressing for tradition, making a statement, or simply looking for that perfect daily wear, we offer curated collections that blend sophistication with comfort. Every piece in our store is handpicked for its quality, design, and ability to elevate your wardrobe.
@@ -22,8 +21,8 @@ const AboutUs = () => {
 
             Zayphire – Fabric that speaks for you.
         </p>
-        <div className="w-[50%]">
-        <img src={aboutimg} alt="about image" />
+        <div className="md:w-[50%]">
+          <img src={aboutimg} alt="about image" />
         </div>
     </div>
   )
