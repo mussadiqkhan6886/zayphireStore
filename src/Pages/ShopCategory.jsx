@@ -31,7 +31,7 @@ const ShopCategory = () => {
       <div data-aos="fade-right" className='h-[300px] lg:h-[500px] overflow-hidden flex items-center justify-center'>
         <img src={banner} alt="banner" className='object-cover  w-[100%]' />
       </div>
-      <div className='flex justify-between my-5 px-4'>
+      <div className='flex justify-between my-5 md:px-4'>
         <p>
           <span className='font-semibold'>Showing all products </span>
         </p>
@@ -43,7 +43,7 @@ const ShopCategory = () => {
           </select>
         </div>
       </div>
-      <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
         {product.map((item, i) => {
             return <Items key={i} id={item.id} name={item.name} img={item.image}  price={item.price}  />
         })}

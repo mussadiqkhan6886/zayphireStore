@@ -17,12 +17,12 @@ const CartItem = () => {
         return(
             <section className='md:p-10 pt-15 lg:px-30'>
     <div className='flex'>
-        <h2 className='w-[10%] font-semibold text-[18px] mb-3'>Products</h2>
-        <h2 className='w-[30%] font-semibold text-[18px] mb-3 pl-10'>Title</h2>
-        <h2 className='w-[15%] font-semibold text-[18px] mb-3'>Price</h2>
-        <h2 className='w-[15%] font-semibold text-[18px] mb-3'>Quantity</h2>
-        <h2 className='w-[15%] font-semibold text-[18px] mb-3'>Total</h2>
-        <h2 className='w-[15%] font-semibold text-[18px] mb-3'>Delete</h2>
+        <h2 className='w-[10%] font-semibold text-[13px] sm:text-[18px] mb-3'>Products</h2>
+        <h2 className='w-[30%] font-semibold text-[13px] sm:text-[18px] mb-3 pl-10'>Title</h2>
+        <h2 className='w-[15%] font-semibold text-[13px] sm:text-[18px] mb-3'>Price</h2>
+        <h2 className='w-[15%] font-semibold text-[13px] sm:text-[18px] mb-3'>Qty</h2>
+        <h2 className='w-[15%] font-semibold text-[13px] sm:text-[18px] mb-3'>Total</h2>
+        <h2 className='w-[15%] font-semibold text-[13px] sm:text-[18px] mb-3'>Delete</h2>
     </div>
     <hr />
     <div>
@@ -34,10 +34,10 @@ const CartItem = () => {
                             <img className='w-[100%] md:w-[55%]' src={item.image} alt="image" />
                         </div>
                         
-                        <h3 className='w-[30%] text-[14px] pr-10'>{item.name}</h3>
-                        <h3 className='w-[15%] pl-2'>PKR {item.price}</h3>
-                        <h3 className='w-[15%] pl-5'>{cartValue[item.id]}</h3>
-                        <h3 className='w-[15%] pl-2'>PKR {item.price * cartValue[item.id]}</h3>
+                        <h3 className='w-[30%] text-[12px] sm:text-[14px] sm:pr-10'>{item.name}</h3>
+                        <h3 className='w-[15%] text-[12px] sm:text-[14px] sm:pl-2'>PKR {item.price}</h3>
+                        <h3 className='w-[15%] text-[12px] sm:text-[14px] sm:pl-5'>{cartValue[item.id]}</h3>
+                        <h3 className='w-[15%] text-[12px] sm:text-[14px] sm:pl-2'>PKR {item.price * cartValue[item.id]}</h3>
                         <div className='w-[15%]'>
                             <i onClick={() => removeFromCart(item.id)} src={cross}  className="fa-solid fa-xmark text-xl ml-3 cursor-pointer"></i>
                         </div>
@@ -69,8 +69,8 @@ const CartItem = () => {
         </div>
         <div>
             <h5 className='text-gray-400 mb-2'>If you have a promo code, Enter it here</h5>
-            <div className='flex'>
-                <input type="text" className='outline-none bg-gray-300 text-gray-600 placeholder:text-gray-600 px-5 text-[14px] w-[270px]' autoComplete='off' placeholder='promo code' />
+            <div className='flex flex-col sm:flex-row'>
+                <input type="text" className='outline-none py-3 bg-gray-300 text-gray-600 placeholder:text-gray-600 px-5 text-[14px] w-[270px]' autoComplete='off' placeholder='promo code' />
                 <button className='bg-black text-white px-6 py-2'>Submit</button>
             </div>
         </div>

@@ -16,7 +16,7 @@ const Items = ({id, name, img, price}) => {
       <div className='flex gap-5 mt-1'>
          <p className='font-semibold'>PKR {price}</p>
       </div>
-     <button onClick={() => addToCart(id)} className='hover:bg-gray-300 mt-2 cursor-pointer text-black border-black border px-7 py-3 text-[14px] absolute bottom-0 active:bg-red-200 active:scale-95 transition-all'>ADD TO CART <i className="ml-2 text-red-600 fa-solid fa-plus"></i></button>
+     <button onClick={() => addToCart(id)} className='hover:bg-gray-300 mt-2 cursor-pointer text-black border-black border px-4 md:px-7 py-3 text-[12px] md:text-[14px] absolute bottom-0 active:bg-red-200 active:scale-95 transition-all'>ADD TO CART <i className="ml-1 md:ml-2 text-red-600 fa-solid fa-plus"></i></button>
     </div>
      </>
   )

@@ -22,10 +22,10 @@ const MySlider = () => {
             <div data-aos="fade-right" className=' h-dvh flex flex-col items-start justify-center m-auto md:pl-18'>
                     <h2 className='font-bold text-2xl'>NEW ARRIVALS ONLY</h2>
                     <div className='flex gap-3 mt-1'>
-                    <h2 className='font-semibold md:text-6xl lg:text-7xl text-7xl'>New </h2>
+                    <h2 className='font-semibold md:text-6xl lg:text-7xl text-6xl'>New </h2>
                     
                     </div>
-                    <h2 className='font-semibold md:text-6xl lg:text-7xl text-7xl' > Collections <br /> For Everyone </h2>
+                    <h2 className='font-semibold md:text-6xl lg:text-7xl text-6xl' > Collections <br /> For Everyone </h2>
                     <div className='bg-amber-500 flex p-3 px-7 items-center rounded-3xl mt-5 gap-3'>
                         <a href="#newCollection"><button className='text-white cursor-pointer' >Latest Collection </button></a>
                     </div>

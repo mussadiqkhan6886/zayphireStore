@@ -6,7 +6,7 @@ const NewCollection = () => {
   return (
     <section id="newCollection" className='justify-center flex flex-col items-center pt-19'> 
       <Heading title={"New Collection"} /> 
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-20'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-5 md:px-20'>
         {newcollection.map((item, i) => (
             <Items  key={i} id={item.id} name={item.name} img={item.image} price={item.price} />
         ))}

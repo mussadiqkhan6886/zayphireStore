@@ -20,7 +20,7 @@ const NavBar = () => {
     }, [location.pathname])
   return (
     <>
-    <header className='flex shadow justify-between px-10 py-2 items-center fixed w-full z-100 bg-amber-100 opacity-80 '>
+    <header className='flex shadow justify-between px-5 md:px-10 py-2 items-center fixed w-full z-100 bg-amber-100 opacity-80 '>
         <div className='flex items-center'>
             <img className='w-[44px] mr-5 h-[44px]' src={logo} alt="logo" />
             <h1 className='font-bold text-2xl'>Zayphire</h1>
@@ -40,7 +40,7 @@ const NavBar = () => {
             <p className='bg-red-600 text-white absolute rounded-full w-[18px] text-[12px] text-center -right-2 -top-1'>{cartTotalCount()}</p>
         </div>
     </header>
-    <nav className='md:hidden fixed w-full z-100 top-14 bg-amber-100 shadow px-10'>
+    <nav className='md:hidden fixed w-full z-100 top-14 bg-amber-100 shadow px-5'>
         <div className='p-2 px-5'>
             <ul className='flex w-full justify-between text-gray-700 items-center '>
                 <li onClick={() => window.scrollTo(0,0)}  className={catogery == "shop" ? "border-b-2 py-1 border-red-500 text-[17px]" : ""}> <Link to="/">Shop</Link> </li>
