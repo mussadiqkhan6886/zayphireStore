@@ -19,7 +19,7 @@ let data = [
       price: "2399",
     },
     {
-       id: 3,
+       id: 7,
        name: "Men Dynasty Grey",
        image: p11_img,
        price: "2399",
@@ -27,7 +27,7 @@ let data = [
        description: "Sophisticated and subtle, Dynasty Grey gives a regal touch with a modern twist. The ideal fabric for poised personalities."
      },
     {
-      id: 4,
+      id: 3,
       name: "Grey Cotton Gul Ahmed  ",
       image: p5_img,
       price: "2399",

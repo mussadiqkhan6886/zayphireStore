@@ -12,19 +12,19 @@ let new_collection = [
      price: "2399",
    },
    {
-      id: 5,
+      id: 4,
       name: "Lemon Colour Gul Ahmed  ",
       image: p7_img,
       price: "1999",
     },
  {
-     id: 6,
+     id: 5,
      name: "Black ",
      image: p8_img,
      price: "2399",
    },
    {
-      id: 7,
+      id: 6,
       name: "Boora Cotton Onion Brown ",
       image: p10_img,
       price: "2599",
