@@ -91,7 +91,7 @@ let all_product = [
     name: "Navy Blue Cotton",
     image: p13_img,
     side_image: p14_img,
-    price: "1999",
+    price: "2799",
     category: "Men",
     description: "Cool and confident — navy blue cotton adds refined depth to your wardrobe. Lightweight yet stylish for year-round wear."
   },
@@ -100,7 +100,7 @@ let all_product = [
     name: "Navy Blue Plain",
     image: p15_img,
     side_image: p16_img,
-    price: "2799",
+    price: "2300",
     category: "Men",
     description: "For men who prefer zero fuss — this plain navy blue wash & wear fabric is sleek, easy to maintain, and always elegant."
   },
